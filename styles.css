@@ -225,7 +225,7 @@ body {
 }
 
 #product1 .pro{
-    width: 25%;
+    width: 20%;
     min-width: 300px;
     padding: 15px 10px;
     border: 1px solid #cce7d0;
@@ -235,10 +235,30 @@ body {
     margin: 15px 0;
     transition: 0.2s ease;
 }
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
 
 #product1 .pro img{
     width: 200px;
     border-radius: 20px;
 }
 
+#product1 .pro .dis{
+    text-align: start;
+    padding: 10px 0;
+   
+}
+
+
+#product1 .pro .dis span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .dis h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 15px;
+}
 
