@@ -41,11 +41,38 @@ p {
 }
 /* Section padding */
 .section-p1 {
-    padding: 40px 80px;
+    padding: 40px 60px;
 }
 
 .section-m1 {
     padding: 40px 0;
+}
+
+button.normal{
+     font-size: 14px;
+     font-weight: 600;
+     padding: 15px 30px;
+     color: #000000;
+     background-color: #fff;
+     border-radius: 4px;
+     cursor: pointer;
+     border: none;
+     outline: none;
+     transition: 0.2s ease;
+     margin-top: 20px;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fffbfb;
+    background-color:transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s ease;
+    margin-top: 20px;
 }
 /* Typography styles */
 body {
@@ -223,6 +250,12 @@ body {
 #product1{
     text-align: center;
 }
+#product1 .product-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
 
 #product1 .pro{
     width: 20%;
@@ -234,6 +267,7 @@ body {
     box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
     margin: 15px 0;
     transition: 0.2s ease;
+    position: relative;
 }
 #product1 .pro:hover{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
@@ -249,8 +283,6 @@ body {
     padding: 10px 0;
    
 }
-
-
 #product1 .pro .dis span{
     color: #606063;
     font-size: 12px;
@@ -260,5 +292,182 @@ body {
     padding-top: 7px;
     color: #1a1a1a;
     font-size: 15px;
+}
+
+#product1 .pro .dis i{
+    font-size: 12px ;
+    color: rgb(243, 182,25);
+}
+
+#product1 .pro .dis h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+
+}
+#product1 .pro .no {
+    display: flex;           /* Ensure the container can size properly */
+    align-items: center;     /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    width: 40px;             /* Adjusted width for a better look */
+    height: 40px;            /* Adjusted height for a better look */
+    border-radius: 50px;
+    background-color: #e8f6e8;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #088178;
+}
+ 
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/StockCake-T-shirt\ among\ foliage_1722849159.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+#banner h4{
+    color: #c9d2f7;
+    font-size: 25px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 60px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: #a71111;
+}
+
+#banner button:hover{
+    background-color: #78ef76;
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#sm-banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    justify-content: space-between;
+}
+
+#sm-banner .banner-box {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-image: url("img/banner/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 170px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+}
+
+
+#sm-banner .items {
+    max-width: 50%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-left: auto;
+    text-align: center;
+}
+
+#sm-banner .items h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+#sm-banner .items h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin: 10px 0;
+}
+
+#sm-banner .items span {
+    font-size: 1.5rem;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#sm-banner .items button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sm-banner .items button:hover {
+    background-color: #ff4500;
+    color: #000000;
+     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+   
+}
+#sm-banner2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+#sm-banner2 .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/joyful-european-lady-summer-hat-dancing-yellow-background-debonair-girl-long-skirt-laughing-while-posing-studio.jpg");
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;   
+}
+
+#sm-banner2 h4{
+    color: white;
+    font-size: 20PX;
+    font-weight: 300;
+}
+
+#sm-banner2 h2{
+    color: white;
+    font-size: 28PX;
+    font-weight: 800;
+}
+
+
+#sm-banner2 SPAN{
+    color: white;
+    font-size: 14PX;
+    font-weight: 500;
+    padding-bottom: 50PX;
 }
 
