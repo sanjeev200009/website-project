@@ -62,6 +62,13 @@ button.normal{
      margin-top: 20px;
 }
 
+button.white:hover {
+     background-color: #78ef76;
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
 button.white{
     font-size: 13px;
     font-weight: 600;
@@ -74,7 +81,8 @@ button.white{
     transition: 0.2s ease;
     margin-top: 20px;
 }
-/* Typography styles */
+
+
 body {
     width: 100%;
     background-color: #fff;
@@ -97,7 +105,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 80px;
-    background-color: #EAE9E7;
+    background-color: #a4a4a4dc;
     box-shadow: 0 5px 15px rgb(0, 0, 0 , 0.6);
     z-index: 999;
     position: sticky;
@@ -307,11 +315,11 @@ body {
 
 }
 #product1 .pro .no {
-    display: flex;           /* Ensure the container can size properly */
-    align-items: center;     /* Center the icon vertically */
-    justify-content: center; /* Center the icon horizontally */
-    width: 40px;             /* Adjusted width for a better look */
-    height: 40px;            /* Adjusted height for a better look */
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+    width: 40px;            
+    height: 40px;            
     border-radius: 50px;
     background-color: #e8f6e8;
     font-weight: 500;
@@ -353,7 +361,7 @@ body {
     color: #fff;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
-}
+} 
 
 body {
     margin: 0;
@@ -419,7 +427,7 @@ body {
     font-weight: 600;
     padding: 10px 20px;
     color: #ffffff;
-    background-color: #ff6347;
+    background-color: #fb8e7b;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -427,28 +435,31 @@ body {
 }
 
 #sm-banner .items button:hover {
-    background-color: #ff4500;
-    color: #000000;
-     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-   
+    background-color:  #ed2705;
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
+
 #sm-banner2{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 20px
   
 }
-#sm-banner2 .banner-box2{
+#sm-banner2 .banner-box2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-image: url("img/banner/joyful-european-lady-summer-hat-dancing-yellow-background-debonair-girl-long-skirt-laughing-while-posing-studio.jpg");
-    min-width: 580px;
+    width: 48%; /* Adjust width to ensure two banners fit nicely in a row */
     height: 50vh;
     background-size: cover;
     background-position: center;
-    padding: 30px;   
+    padding: 30px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
 }
 
 #sm-banner2 h4{
@@ -464,10 +475,129 @@ body {
 }
 
 
-#sm-banner2 SPAN{
+#sm-banner2 span{
     color: white;
     font-size: 14PX;
     font-weight: 500;
-    padding-bottom: 50PX;
+    padding-bottom: 15PX;
 }
 
+
+#sm-banner2 .banner-box3{
+    background-image: url("img/banner/shopping-bags-card-black-friday-shopping-concept.jpg");
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/woman-holding-shopping-bags-with-copy-space.jpg");
+    min-width: 30%; /* Adjust width to ensure two banners fit nicely in a row */
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    place-items: center;
+  
+}
+
+#banner3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#banner3 .banner-box3{
+    background-image: url("img/banner/woman-holding-various-shopping-bags-copy-space.jpg");
+}
+
+
+#banner3 .banner-box4{
+    background-image: url("img/banner/sensual-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-blue-studio-background-holding-trendy-handbag\ \(1\).jpg");
+}
+
+#banner3 h3{
+    color: red;
+}
+
+#banner3 h2{
+    font-size: 35px;
+}
+#Newsletter {
+    height: 27vh;
+    background-color: #088178;
+    width: 100%;
+    padding: 10px;
+    background-image: url("img/banner/b14.png");
+    background-size: cover;
+    background-color: #041e42;
+}
+#Newsletter .container-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Newsletter .text-content {
+    flex: 1;
+    padding: 15px;
+}
+
+
+#Newsletter .em-bu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  #Newsletter input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    height: 40px; /* Set a consistent height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+
+  #Newsletter button.Normal {
+    padding: 0 20px; /* Remove vertical padding, add horizontal padding */
+    height: 40px; /* Set the same height as the input */
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+#Newsletter button.Normal:hover {
+    background-color: #78ef76;
+  }
+
+  #Newsletter  h2 ,p{
+    color: #fff;
+  }
+
+  #Newsletter span{
+    color: #f39c12;
+  }
+
+  #Newsletter .span2{
+    color: #f31212;
+  }
