@@ -41,7 +41,7 @@ p {
 }
 /* Section padding */
 .section-p1 {
-    padding: 40px 60px;
+    padding: 40px 80px;
 }
 
 .section-m1 {
@@ -153,6 +153,19 @@ body {
     left: 20px;
 }
 
+#lg-bag{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+#mobile{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
 #hero{
     background-image: url("img/girl-6615570_1920.jpg");
     height: 90vh;
@@ -197,9 +210,14 @@ body {
     color: rgba(219, 216, 209, 1)
 }
 
-#hero h2,h4{
+#hero h2{
     color: #EAE9E7;
 }
+
+#hero h4{
+    color: #EAE9E7;
+}
+
 #features{
     display: flex;
     flex-wrap: wrap;
@@ -590,7 +608,12 @@ body {
     background-color: #78ef76;
   }
 
-  #Newsletter  h2 ,p{
+  #Newsletter  h2 {
+    color: #fff;
+  }
+
+  
+  #Newsletter  p{
     color: #fff;
   }
 
@@ -598,6 +621,255 @@ body {
     color: #f39c12;
   }
 
-  #Newsletter .span2{
-    color: #f31212;
-  }
+  /* General Footer Styles */
+footer.section-p1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensures items start at the same height */
+}
+
+footer.section-p1 .colum, 
+footer.section-p1 .col, 
+footer.section-p1 .install {
+    flex: 1;
+    min-width: 240px;
+    margin: 20px;
+}
+
+
+footer.section-p1 h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+footer.section-p1 h4::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: #f39c12;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+footer.section-p1 p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+footer.section-p1 .follow .Icon i {
+    font-size: 1.5rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer.section-p1 .follow .Icon i:hover {
+    color: #f39c12;
+}
+
+footer.section-p1 a {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.8;
+   
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer.section-p1 a:hover {
+    color: #f39c12;
+}
+
+footer.section-p1 .install .Row {
+    display: flex;
+    gap: 10px;
+}
+
+footer.section-p1 .install img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+footer.section-p1 .install p {
+    margin-top: 10px;
+}
+
+footer.section-p1 img {
+    max-width: 100%;
+}
+
+@media (max-width:799px){
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3 ;
+        box-shadow: 0 40px 60px rgb(0, 0, 0 , 0.2);
+        padding: 80px 0 0 10px;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    #navbar.active{
+        right: 0;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #hero {
+        padding: 0 20px;
+        height: auto;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem; 
+    }
+    
+    #hero h2 {
+        font-size: 1.5rem; 
+    }
+
+    #hero h4 {
+        font-size: 1rem; 
+    }
+
+    #hero p {
+        font-size: 0.9rem; 
+    }
+
+    #hero button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        width: 150px;
+        margin: 10px 0; 
+    }
+
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fe-box {
+        flex: 1 1 100%; 
+        max-width: 400px;
+        margin: 10px 0;
+    }
+
+    .fe-box img {
+        max-width: 120px; 
+    }
+    
+    .fe-box h6 {
+        font-size: 0.9rem; 
+    }
+
+    #sm-banner{
+        padding: 0 20px;
+        height: auto;
+    }
+
+    #sm-banner h4 {
+        font-size: 1rem; 
+    }
+
+    #sm-banner h2 {
+        font-size: 1.5rem; 
+    }
+
+    #hero span {
+        font-size: 0.9rem; 
+    }
+
+    #product1 .product-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px ;
+    }
+    #banner {  
+        height: 20vh;
+    }
+
+    #banner h4 {
+        padding-top:3rem;
+        font-size: 0.9rem;
+    }
+
+    #banner h2 {
+        font-size: 1.8rem;    
+        line-height: 1.5rem;
+    }
+
+    button.normal {
+        padding: 15px 30px;
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
