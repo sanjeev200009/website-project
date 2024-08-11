@@ -124,7 +124,7 @@ body {
     list-style: none;
     justify-content: space-around;
     padding: 0 20px;
-    position: relative; /* add the relavent  position for parent class li */
+    position: relative; 
 }
 
 #navbar li a{
@@ -143,12 +143,12 @@ body {
 
 #navbar li a.active::after ,
 #navbar li a:hover::after
-{       /*sudo classes atter and befor*/
-    content: ""; /*every time use the sudo classes  need to initialize the content */
+{     
+    content: "";
     width: 30%;
     height: 2px;
     background:  #088178;
-    position: absolute; /*use the posistion absolute in side the child element */
+    position: absolute;
     bottom: -4px;
     left: 20px;
 }
@@ -223,7 +223,7 @@ body {
 }
 
 #features .fe-box {
-   width: 200px;
+   width: 180px;
    text-align: center;
    padding: 25px 15px;
    box-shadow: 20px 20px 34px rgb(0, 0, 0 , 0.2);
@@ -240,7 +240,7 @@ body {
 
 
 #features .fe-box img{
-    width: 100%;
+    width: 80%;
 }
 #features .fe-box h6{
     display: inline-block;
@@ -469,12 +469,12 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: url("img/banner/joyful-european-lady-summer-hat-dancing-yellow-background-debonair-girl-long-skirt-laughing-while-posing-studio.jpg");
-    width: 48%; /* Adjust width to ensure two banners fit nicely in a row */
+    width: 48%; 
     height: 50vh;
     background-size: cover;
     background-position: center;
-    padding: 30px; /* Adjust padding as needed */
-    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    padding: 30px; 
+    margin-bottom: 20px; 
 }
 
 #sm-banner2 h4{
@@ -514,12 +514,12 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: url("img/banner/woman-holding-shopping-bags-with-copy-space.jpg");
-    min-width: 30%; /* Adjust width to ensure two banners fit nicely in a row */
+    min-width: 30%; 
     height: 30vh;
     background-size: cover;
     background-position: center;
-    padding: 20px; /* Adjust padding as needed */
-    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    padding: 20px; 
+    margin-bottom: 20px; 
     place-items: center;
   
 }
@@ -585,13 +585,12 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px 0 0 5px;
-    height: 40px; /* Set a consistent height */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    height: 40px; 
   }
 
   #Newsletter button.Normal {
-    padding: 0 20px; /* Remove vertical padding, add horizontal padding */
-    height: 40px; /* Set the same height as the input */
+    padding: 0 20px; 
+    height: 40px; 
     background-color: #f39c12;
     color: white;
     border: none;
@@ -621,9 +620,9 @@ body {
   /* General Footer Styles */
 footer.section-p1 {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between;
-    align-items: flex-start; /* Ensures items start at the same height */
+    align-items: flex-start;
 }
 
 footer.section-p1 .colum, 
@@ -659,7 +658,7 @@ footer.section-p1 p {
 
 footer.section-p1 .follow .Icon i {
     font-size: 1.5rem;
-    margin: 10px;
+    margin: 15px;
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -672,7 +671,6 @@ footer.section-p1 a {
     display: block;
     font-size: 0.9rem;
     line-height: 1.8;
-   
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -736,7 +734,6 @@ footer.section-p1 img {
     font-weight: 600;
 }
 
-/*sproduct*/
 
 #productdetails .single-pro-image{
       width: 40%;
@@ -893,11 +890,10 @@ footer.section-p1 img {
     position: relative;
     padding-bottom: 90px;
     justify-content: space-between; 
-    width: 100%;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    padding: 20px; /* Padding inside the box */
-    margin-bottom: 50px; /* Space between blog boxes */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 50px; 
     position: relative;
 
 }
@@ -914,7 +910,6 @@ footer.section-p1 img {
     object-fit: cover;
     margin-right: 40px;
     border-radius: 8px; 
-    
 }
 
 
@@ -925,7 +920,7 @@ footer.section-p1 img {
 #blog .blog-details a{
    text-decoration: none;
    font-size: 1em;
-   color: #0288d1; /* Primary color for links */
+   color: #0288d1;
    font-weight: 700;
    position: relative;
    transition: 0.3s;
@@ -938,10 +933,11 @@ footer.section-p1 img {
     height: 2px;
     background-color: #0288d1;
     position: absolute;
-    bottom: -5px; /* Positioned below the link */
+    bottom: -5px; 
     left: 0;
     transition: 0.3s;
 }
+
 #blog .blog-box h1{
     position: absolute;
     top: -25px;
@@ -958,8 +954,167 @@ footer.section-p1 img {
 
 #blog .blog-details a:hover::after{
     background-color: #0288d1;
-    width: 100%; /* Full width on hover */
+    width: 100%; 
 }
+
+/*about page*/
+#page-header.about-header{
+    background-image: url("img/banner/Dark\ Green\ Modern\ Women\'s\ Pants\ Billboard\ Web\ Ad.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/*About */
+#contact-box {
+    display: flex;
+    padding: 100px 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    margin-bottom: 50px; 
+    position: relative;
+}
+
+#contact-box img {
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  
+    
+}
+
+
+#contact-box img:hover {
+    transform: scale(1.05);
+}
+
+
+#contact-box .contact-details {
+    width: 50%; 
+    padding: 20px;
+}
+
+#contact-box h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    color: #333; 
+}
+
+#contact-box .q {
+    color: #0288d1;
+    font-size: 2.5em;
+}
+
+#contact-box p {
+    font-size: 1em; 
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+}
+
+#contact-box .highlight {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #0288d1; 
+}
+
+#contact-box h1::after {
+    content: "";
+    width: 50%; 
+    height: 2px;
+    background-color: #0288d1;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+
+#contact-box h1:hover::after {
+    width: 100%; 
+}
+
+#about-app{
+    text-align: center;
+
+}
+
+/* Styling for the section containing the video */
+#about-app .video {
+    width: 900px; /* Set width to 70px */
+    height: 700px; /* Set height to 70px */
+    margin: 30px auto 0 auto; /* Center the section horizontally */
+    overflow: hidden; /* Hide any overflow */
+    border-radius: 20px; /* Rounded corners for the container */
+}
+
+/* Styling for the video element within the section */
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container without distortion */
+}
+
+/*Contact*/
+#contact-details{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+
+#contact-details .details{
+    width: 40%;  
+}
+
+#contact-details .details span{
+    font-size: 12px;
+}
+
+#contact-details .details  h2{
+    font-size: 26px;
+    padding-bottom:10px ;
+}
+
+#contact-details .details li{
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+
 
 @media (max-width:799px){
     .section-p1 {
