@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Price Coupon</title>
+    <link rel="stylesheet" href="reviews.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Get Your Price Coupon</h2>
+        <form id="reviewForm" onsubmit="return validateCouponForm()">
+            <h2>Get Your Price Coupon</h2>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full name with initial" required>
+            <div id="nameError" class="error"></div>
+
+            <label for="nic">NIC Number:</label>
+            <input type="text" id="nic" name="nic" placeholder="1234567 or 12345V" required>
+            <div id="nicError" class="error"></div>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="+94 701234567" required>
+            <div id="phoneError" class="error"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="feedbackMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

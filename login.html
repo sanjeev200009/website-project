@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vision-vista Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="background"></div>
+    <div class="login-container">
+        <h1>Sign in</h1>
+        <p>New user? <a href="register.html">Create an account</a></p>
+        <form action="login.php" method="POST" onsubmit="return validateLoginForm()">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Continue</button>
+        </form>
+        <p>Or</p>
+        <button class="google">Continue with Google</button>
+        <button class="facebook">Continue with Facebook</button>
+        <button class="apple">Continue with Apple</button>
+        <a href="#">View more</a><br><br>
+        <a href="#">Get help signing in</a>
+    </div>
+
+</body>
+</html>
